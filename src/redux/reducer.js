@@ -9,7 +9,7 @@ const reducer = (state = { num }, action) => {
     case DEC_NUM:
       return { num: state.num - 1 };
     default:
-      return { ...state };
+      return state;
   }
 };
 
