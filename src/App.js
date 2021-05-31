@@ -8,7 +8,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <input type="text" value={props.num} />
+      <input type="text" value={props.num} readOnly />
       <input type="button" value="Increment" onClick={props.incNum} />
       <input type="button" value="Decrement" onClick={props.decNum} />
     </div>
@@ -25,4 +25,3 @@ const mapDispatchToProps = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-
